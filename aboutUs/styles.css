@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, button {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: #121d22;
+    color: #ffffff;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Oswald", serif;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  p {
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  
+  h1 {
+    font-size: 72px;
+    margin-bottom: 24px;
+  }
+  
+  h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .area {
+    padding: 150px 15px;
+  }
+  
+  .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    width: 160px;
+    height: 160px;
+  }
+  
+  nav ul {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  nav ul li {
+    margin-left: 7px;
+    margin-right: 7px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid #ff8906;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: #ff8906;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 16px 28px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    display: inline-block;
+    border-radius: 25px;
+  }
+  
+
+  header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-image: linear-gradient(180deg, #f28e5a00 0%, #00000000 65%);
+  }
+  
+  #heroHome {
+    position: relative;
+    width: 100%;
+    background-image: url("../images/bg-elephant.jpg");
+  }
+  
+  #heroHome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #121d22, #121d2200, #121d22);
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  #mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2;
+    position: inherit;
+    min-height: 600px;
+  }
+  
+  #mainSection h1 {
+    text-align: center;
+    color: #ff8906;
+  }
+  
+  #mainSection h2 {
+    color: #fff;
+    margin-bottom: 0;
+  }
+  
+  .mainBtn {
+    background-color: #fff;
+    color: #000;
+    z-index: 3;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+  }
+  
+  .mainBtn:hover {
+    background-color: rgba(255, 137, 6, 1);
+    box-shadow: 0 2px 4px rgba(255, 137, 6, 0.6);
+    color: #fff;
+  }
+  
+  /* Navigation Section */
+  #explore .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  #safari .container {
+    width: 100%;
+    flex-direction: row;
+  }
+  
+  .animalInfo {
+    width: 100%;
+    display: flex;
+  }
+  
+  #safari {
+    width: 100%;
+    background-image: url("../images/bg-elephant2.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #safari:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #121d22, #121d2200, #121d22);
+    opacity: 1;
+    z-index: 1;
+  }
+ 
+  .card {
+    width: 33%;
+    background-color: #1e292d;
+    border: 3px solid #00000000;
+    text-align: center;
+    padding: 30px 80px;
+    margin: 5px;
+  }
+  
+  .card:hover {
+    background-color: rgba(255, 137, 6, 1);
+    border: 1px solid 000000;
+    border: 3px solid #ffffff;
+  }
+  
+  .card img {
+    height: 150px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .card h3 {
+    margin-top: 20px;
+  }
+  
+
+  footer .area {
+    padding-top: 0;
+  }
+  
+  footer .area div {
+    width: 25%;
+  }
+  
+  footer h3 {
+    margin: 17px 0;
+  }
+  
+  footer ul {
+    flex-direction: column;
+    font-size: 17px;
+    line-height: 27px;
+    margin-left: 0;
+  }
+  
+  footer ul a {
+    font-size: 17px;
+  }
+  
+  #copyright {
+    text-align: center;
+    padding: 30px;
+    border-top: solid 1px #fff;
+    margin-bottom: 0;
+  }
+  
+  
+  @media only screen and (max-width: 1024px) {
+    .card img {
+      height: 60px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 760px) {
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 32px;
+      margin-bottom: 36px;
+    }
+  
+    p {
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  
+    .navBar {
+      justify-content: center;
+    }
+  
+    nav ul li {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 15px;
+    }
+  
+    .area {
+      padding: 100px 15px;
+    }
+  
+    .animalInfo {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+      margin: 0;
+      margin: 10px 0;
+    }
+  
+    #explore .container h2 {
+      text-align: center;
+    }
+  
+    .safariInfo {
+      margin: 0 auto;
+      width: 100%;
+    }
+  
+    footer .container {
+      flex-direction: column;
+    }
+  
+    footer .area div {
+      width: 100%;
+      text-align: center;
+    }
+  
+    footer nav {
+      margin-bottom: 24px;
+    }
+  }
+  
+  
